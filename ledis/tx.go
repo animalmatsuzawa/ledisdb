@@ -4,7 +4,7 @@ package ledis
 // 	"errors"
 // 	"fmt"
 // 	"github.com/siddontang/go/log"
-// 	"github.com/siddontang/ledisdb/store"
+// 	"github.com/animalmatsuzawa/ledisdb/store"
 // )
 
 // var (

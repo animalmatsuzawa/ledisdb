@@ -15,8 +15,8 @@ import (
 	"github.com/siddontang/go/num"
 	"github.com/siddontang/go/sync2"
 	"github.com/siddontang/goredis"
-	"github.com/siddontang/ledisdb/ledis"
-	"github.com/siddontang/ledisdb/rpl"
+	"github.com/animalmatsuzawa/ledisdb/ledis"
+	"github.com/animalmatsuzawa/ledisdb/rpl"
 )
 
 var (

@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/siddontang/go/num"
-	"github.com/siddontang/ledisdb/store"
+	"github.com/animalmatsuzawa/ledisdb/store"
 )
 
 type KVPair struct {

@@ -10,8 +10,8 @@ import (
 	"sync"
 
 	"github.com/siddontang/goredis"
-	"github.com/siddontang/ledisdb/config"
-	"github.com/siddontang/ledisdb/ledis"
+	"github.com/animalmatsuzawa/ledisdb/config"
+	"github.com/animalmatsuzawa/ledisdb/ledis"
 )
 
 type App struct {

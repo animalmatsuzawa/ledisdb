@@ -3,7 +3,7 @@ package store
 import (
 	"bytes"
 
-	"github.com/siddontang/ledisdb/store/driver"
+	"github.com/animalmatsuzawa/ledisdb/store/driver"
 )
 
 const (

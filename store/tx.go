@@ -1,7 +1,7 @@
 package store
 
 import (
-	"github.com/siddontang/ledisdb/store/driver"
+	"github.com/animalmatsuzawa/ledisdb/store/driver"
 )
 
 type Tx struct {

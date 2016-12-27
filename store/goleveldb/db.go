@@ -8,8 +8,8 @@ import (
 	"github.com/syndtr/goleveldb/leveldb/storage"
 	"github.com/syndtr/goleveldb/leveldb/util"
 
-	"github.com/siddontang/ledisdb/config"
-	"github.com/siddontang/ledisdb/store/driver"
+	"github.com/animalmatsuzawa/ledisdb/config"
+	"github.com/animalmatsuzawa/ledisdb/store/driver"
 
 	"os"
 )

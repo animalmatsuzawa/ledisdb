@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/siddontang/go/num"
-	"github.com/siddontang/ledisdb/config"
-	"github.com/siddontang/ledisdb/store"
+	"github.com/animalmatsuzawa/ledisdb/config"
+	"github.com/animalmatsuzawa/ledisdb/store"
 )
 
 type GoLevelDBStore struct {

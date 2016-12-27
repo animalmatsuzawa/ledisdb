@@ -5,9 +5,9 @@ import (
 	"flag"
 	"fmt"
 
-	"github.com/siddontang/ledisdb/config"
-	"github.com/siddontang/ledisdb/ledis"
-	"github.com/siddontang/ledisdb/store"
+	"github.com/animalmatsuzawa/ledisdb/config"
+	"github.com/animalmatsuzawa/ledisdb/ledis"
+	"github.com/animalmatsuzawa/ledisdb/store"
 )
 
 var configPath = flag.String("config", "", "ledisdb config file")

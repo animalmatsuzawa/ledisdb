@@ -1,7 +1,7 @@
 package ledis
 
 // import (
-// 	"github.com/siddontang/ledisdb/config"
+// 	"github.com/animalmatsuzawa/ledisdb/config"
 // 	"os"
 // 	"strings"
 // 	"testing"

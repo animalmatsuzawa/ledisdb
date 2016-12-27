@@ -8,8 +8,8 @@ import (
 
 	"github.com/siddontang/go/hack"
 	"github.com/siddontang/go/num"
-	"github.com/siddontang/ledisdb/ledis"
-	"github.com/siddontang/ledisdb/store"
+	"github.com/animalmatsuzawa/ledisdb/ledis"
+	"github.com/animalmatsuzawa/ledisdb/store"
 )
 
 //for simple implementation, we only support int64 score

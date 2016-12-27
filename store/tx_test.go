@@ -3,7 +3,7 @@ package store
 import (
 	"testing"
 
-	"github.com/siddontang/ledisdb/store/driver"
+	"github.com/animalmatsuzawa/ledisdb/store/driver"
 )
 
 func TestTx(t *testing.T) {

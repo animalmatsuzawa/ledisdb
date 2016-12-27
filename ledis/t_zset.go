@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/siddontang/go/hack"
-	"github.com/siddontang/ledisdb/store"
+	"github.com/animalmatsuzawa/ledisdb/store"
 )
 
 const (

@@ -1,10 +1,10 @@
 #!/bin/bash
 
 export LEDISTOP=$(pwd)
-export LEDISROOT="${LEDISROOT:-${LEDISTOP/\/src\/github.com\/siddontang\/ledisdb/}}"
+export LEDISROOT="${LEDISROOT:-${LEDISTOP/\/src\/github.com\/animalmatsuzawa\/ledisdb/}}"
 # LEDISTOP sanity check
-if [[ "$LEDISTOP" == "${LEDISTOP/\/src\/github.com\/siddontang\/ledisdb/}" ]]; then
-    echo "WARNING: LEDISTOP($LEDISTOP) does not contain src/github.com/siddontang/ledisdb"
+if [[ "$LEDISTOP" == "${LEDISTOP/\/src\/github.com\/animalmatsuzawa\/ledisdb/}" ]]; then
+    echo "WARNING: LEDISTOP($LEDISTOP) does not contain src/github.com/animalmatsuzawa/ledisdb"
     false
 fi
 
@@ -38,7 +38,7 @@ export GOPATH=$(add_path $GOPATH $LEDISROOT)
 
 GO_BUILD_TAGS=
 CGO_CFLAGS=
-CGO_CXXFLAGS=
+CGO_CXXFLAGS="-fpermissive"
 CGO_LDFLAGS=
 
 # check dependent libray, now we only check simply, maybe later add proper checking way.

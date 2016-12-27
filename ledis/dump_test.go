@@ -5,8 +5,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/siddontang/ledisdb/config"
-	"github.com/siddontang/ledisdb/store"
+	"github.com/animalmatsuzawa/ledisdb/config"
+	"github.com/animalmatsuzawa/ledisdb/store"
 )
 
 func TestDump(t *testing.T) {
