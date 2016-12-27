@@ -52,3 +52,7 @@ deps:
 travis:
 	@rm -rf vendor && ln -s cmd/vendor vendor
 	@$(GO) test --race -tags '$(GO_BUILD_TAGS)' $(PKGS)
+
+install:
+	cp -p bin/ledis-server /usr/local/bin
+	cp -p bin/ledis-cli /usr/local/bin
