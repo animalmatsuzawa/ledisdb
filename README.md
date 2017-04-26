@@ -34,9 +34,6 @@ Create a workspace and checkout ledisdb source
 
     cd src/github.com/siddontang/ledisdb
 
-    #install godep and be sure godep command can be found in $PATH
-    go get github.com/tools/godep
-
     #set build and run environment 
     source dev.sh
 
@@ -60,9 +57,9 @@ Create a workspace and checkout ledisdb source
 + Set `LEVELDB_DIR` and `SNAPPY_DIR` to the actual install path in dev.sh.
 + `make clean && make` 
 
-## RocksDB support
+## RocksDB support 
 
-+ [Install rocksdb](https://github.com/facebook/rocksdb/blob/master/INSTALL.md)(`make shared_lib`) and snappy first.
++ [Install rocksdb(5.1+)](https://github.com/facebook/rocksdb/blob/master/INSTALL.md)(`make shared_lib`) and snappy first.
 
     LedisDB has not yet supplied a simple script to install.
 
@@ -70,7 +67,7 @@ Create a workspace and checkout ledisdb source
 + `make clean && make` 
 
 
-If the RocksDB API changes, LedisDB may not build successfully. LedisDB currently supports RocksDB version 3.5 or later.
+If the RocksDB API changes, LedisDB may not build successfully. LedisDB currently supports RocksDB version 5.1 or later.
     
 
 ## Choose store database
@@ -91,9 +88,7 @@ Choosing a store database to use is very simple.
 
 ## Lua support
 
-+ Compile and install Lua
-+ Set `LUA_DIR` to the actual path in `dev.sh`
-+ `make clean && make` 
+Lua is supported using [gopher-lua](https://github.com/yuin/gopher-lua), a Lua VM, completely written in Go.
 
 ## Configuration
 
@@ -175,16 +170,23 @@ See [Clients](https://github.com/siddontang/ledisdb/wiki/Clients) to find or con
 ## Caveat
 
 + Changing the backend database at runtime is very dangerous. Data validation is not guaranteed if this is done.
-+ `pcall` and `xpcall` are not supported in Lua. See the README in [golua](https://github.com/aarzilli/golua).
-
 
 ## Requirement
 
-+ Go version >= 1.5
++ Go version >= 1.6
 
 ## Related Repos
 
 + [pika](https://github.com/Qihoo360/pika)
+
+
+## Donate
+
+If you like the project and want to buy me a cola, you can through: 
+
+|PayPal|微信|
+|------|---|
+|[![](https://www.paypalobjects.com/webstatic/paypalme/images/pp_logo_small.png)](https://paypal.me/siddontang)|[![](https://github.com/siddontang/blog/blob/master/donate/weixin.png)|
 
 ## Feedback
 

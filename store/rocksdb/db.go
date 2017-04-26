@@ -140,12 +140,10 @@ func (db *DB) initOptions(cfg *config.RocksDBConfig) {
 	opts.SetTargetFileSizeMultiplier(cfg.TargetFileSizeMultiplier)
 	opts.SetMaxBytesForLevelBase(cfg.MaxBytesForLevelBase)
 	opts.SetMaxBytesForLevelMultiplier(cfg.MaxBytesForLevelMultiplier)
-	opts.DisableDataSync(cfg.DisableDataSync)
 	opts.SetMinWriteBufferNumberToMerge(cfg.MinWriteBufferNumberToMerge)
 	opts.DisableAutoCompactions(cfg.DisableAutoCompactions)
 	opts.EnableStatistics(cfg.EnableStatistics)
 	opts.UseFsync(cfg.UseFsync)
-	opts.AllowOsBuffer(cfg.AllowOsBuffer)
 	opts.SetStatsDumpPeriodSec(cfg.StatsDumpPeriodSec)
 
 	db.opts = opts
@@ -327,10 +325,6 @@ func (db *DB) delete(wo *WriteOptions, key []byte) error {
 		return saveError(errStr)
 	}
 	return nil
-}
-
-func (db *DB) Begin() (driver.Tx, error) {
-	return nil, driver.ErrTxSupport
 }
 
 func (db *DB) Compact() error {
